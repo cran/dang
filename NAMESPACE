@@ -1,0 +1,8 @@
+importFrom("utils", "head", "object.size", "tail", "download.file", "read.table")
+importFrom("grDevices", "rgb", "xy.coords")
+importFrom("graphics", "lines", "plot")
+importFrom("stats", "time", "runif")
+
+exportPattern("^[[:alpha:]]+")
+
+S3method(print, xts)

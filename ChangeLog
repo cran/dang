@@ -1,0 +1,127 @@
+2019-02-10  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/motivate.R: (motivate): New 'motivating' function ported from the
+	Stata command by Kabira Namit
+	* man/motivate.Rd: Documentation
+
+	* R/inGit.R (inGit): Simple helper function to determine if given
+	directory is part of a git repo. Does not work on Windows.
+	* man/inGit.Rd: Documentation
+
+2019-02-09  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/demotivate.R (demotivate): Simplified code and commented out two
+	language-comparison based ones reflective of the function upbringing;
+	use single quotes instead of escaped double quotes
+
+2019-02-08  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/demotivate.R (demotivate): New 'demotivating' function ported
+	from the Stata command by Kevin Denny.
+	* man/demotivate.Rd: Documentation
+
+	* NAMESPACE: Additional imports
+
+2018-11-18  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Added
+
+	* R/objects.R: Add note with credit to P Pikal and D Hinds as we do
+	on the nine-year old StackOverflow post that is behind it
+
+	* .travis.yml: Added
+
+2018-11-17  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.9
+
+	* R/plotOBOS.R: Minor cleanup now that a newer xts allows it
+
+2018-09-04  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.8
+
+	* R/checkCRAN.R: Added Brodie's excellent function (with some minor
+	modifications)
+
+2018-04-07  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/alphavantage.R (alphavantage): Test for data.table
+
+2017-09-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/alphavantage.R (alphavantage): New function
+	* man/alphavantage.Rd: Documentation
+
+2017-08-16  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.7
+
+	* R/googleFinanceData.R (googleFinanceData): New function
+	* R/plotOBOS.R (plotOBOS): Idem
+	* man/googleFinanceData.Rd: New documentation
+	* man/plotOBOS.Rd: Idem
+
+	* NAMESPACE: One more import
+
+2017-08-14  Dirk Eddelbuettel  <edd@debian.org>
+
+	* NAMESPACE: Export print.xts as S3 method
+
+	* R/functions.R (assignFormals): New argument env
+	* man/assignFormals.Rd: Ditto
+
+2017-08-11  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.6
+
+	* NAMESPACE: Additional imports from base R, no other imports
+
+	* R/datatable.R (as.data.table.xts): More careful namespace use
+
+2017-03-16  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.5
+
+	* R/functions.R (assignFormals): Experimental new function
+	* man/assignFormals.Rd: Documentation
+
+2017-02-19  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Release 0.0.4
+
+	* R/*R: Added roxygen documentation
+	* man/*Rd: Idem
+
+	* NAMESPACE: No more Imports
+	* DESCRIPTION: All packages optional via Suggests
+	* R/*R: Reworked dependency into optional and tested
+
+2017-02-17  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Release 0.0.3
+
+	* R/formats.R (ymd): New function
+	* man/ymd.R: Idem
+
+	* R/datatable.R (as.data.table.xts): Expanded
+
+2016-12-29  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/load.R (silent): New function
+
+	* R/print.R (print.xts): Improvements
+
+2016-11-16  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Release 0.0.2
+
+	* R/print.R (print.xts): Added
+
+2016-11-07  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Initial release 0.0.1
+
+	* R/datatable.R (as.data.table.xts): First version
+	* R/objects.R (ls.objects, lsos, showMemoryUse): Idem
+
