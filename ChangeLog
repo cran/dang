@@ -1,3 +1,86 @@
+2021-10-17  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.14
+
+	* configure: Deactivated git sha1 and date timestamper
+	* .Rbuildignore: Do not install configure
+	* R/git_sha_date.R: Remove
+
+2021-10-16  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Author): Add Jordan Mark Barbone as contributor
+	* README.md: Add Jordan Mark Barbone
+
+2021-10-07  Jordan Mark Barbone  <jmbarbone@gmail.com>
+
+	* R/checkCRANStatus.R: Add drop=FALSE to prevent vector return
+
+2021-10-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* configure: Use git and awk to create timestamp from source repo
+	* R/git_sha_date.R: Generated file
+
+2021-09-30  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .github/workflows/ci.yaml: Back to standard tidyCpp from CRAN
+
+2021-09-20  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/rollMinMax.cpp: Move callable funtion to bottom
+
+2021-08-29  Dirk Eddelbuettel  <edd@debian.org>
+
+ 	* DESCRIPTION (Version, Date): Roll minor version
+
+	* .github/workflows/ci.yaml: [Temporary] Use tidyCpp from GitHub
+
+	* src/rollMinMax.cpp: Rolling min/max using 'NumVec' from tinyCpp
+	* R/rollMinMax.R: Minimal R caller
+	* man/rollMinMax.Rd: Documentation
+
+	* .editorconfig: Added
+	* .Rbuildignore: Updated accordingly
+
+2021-07-21  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/NEWS.Rd: Correct formatting in one NEWS.Rd item
+
+2021-06-09  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/datatable.R (as.data.table): Correct dispatch
+
+2021-03-22  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (URL): Add links to repo and package page
+
+2021-03-21  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/wday.R (wday): New function to return day of the week as integer
+	* man/wday.Rd: Documentation
+
+2021-03-08  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/readAndConvert.R: Add note on potential variability of iconv output
+	* man/readAndConvert.Rd: Idem
+
+2021-03-07  Dirk Eddelbuettel  <edd@debian.org>
+
+ 	* DESCRIPTION (Version, Date): Roll minor version
+
+	* src/readAndConvert.cpp (_readAndConvert): New function to read and
+	convert encoding via R-supplied iconv library
+	* R/readAndConvert.R (readAndConvert): R wrapper
+	* man/readAndConvert.Rd: Documentation
+	* src/init.c (CallEntries): Registration
+
+	* R/intradayMarketMonitor.R (.show_plot): Refine title display to
+	fall back to last good data point outside of market hours
+
+	* src/checkNonAscii.cpp (_check_nonASCII): Changed indentation to make
+	outer for loop more explicit
+
+	* .github/workflows/ci.yaml (jobs): Comment-out borked macOS
+
 2021-02-17  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 0.0.13
@@ -17,7 +100,7 @@
 
 2021-01-15  Dirk Eddelbuettel  <edd@debian.org>
 
-	* DESCRIPTION (Version, Date): Roll minor version
+ 	* DESCRIPTION (Version, Date): Roll minor version
 
 	* R/intradayMarketMonitor.R: Added as extended and refactored version
 	of an initial gist by Josh Ulrich
@@ -258,4 +341,3 @@
 
 	* R/datatable.R (as.data.table.xts): First version
 	* R/objects.R (ls.objects, lsos, showMemoryUse): Idem
-

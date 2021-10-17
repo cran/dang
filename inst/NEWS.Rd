@@ -3,11 +3,31 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/dang/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/dang/issues/#1}{##1}}
 
+\section{Changes in version 0.0.14 (2021-10-17)}{
+  \itemize{
+    \item Updated continuous integration to run on Linux only.
+    \item Edited \code{checkNonAscii.cpp} for readability.
+    \item More robust title display in \code{intradayMarketMonitor.R}.
+    \item New C++-based function to read and convert encoding via the
+    R-supplied \code{iconv} library, noted a potential variability.
+    \item New function \code{wday} returning day of the week as
+    \code{integer}.
+    \item The signature to \code{as.data.table} was standardized.
+    \item A new function \code{rollMinMax} was added illustrating use of
+    the \code{NumVec} class from \pkg{tinyCpp}.
+    \item The \code{configure} script can record the last commit date and
+    sha1 to automate timestamping builds, but not activated in this release.
+    \item \code{checkCRANStatus()} now works correctly for single-package
+    lookups (Jordan Mark Barbone in \ghpr{4}).
+  }
+}
+
 \section{Changes in version 0.0.13 (2021-02-17)}{
   \itemize{
     \item New function \code{intradayMarketMonitor} based on an earlier
     gist-posted snippet by Josh Ulrich.
-    \item The CI setup was generalized as a test for `r-ci` and is used
+    \item The CI setup was generalized as a test for
+    \href{https://eddelbuettel.github.io/r-ci/}{r-ci} and is used
     essentially unchanged with three different providers.
   }
 }
