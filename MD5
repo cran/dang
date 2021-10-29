@@ -1,5 +1,5 @@
-0c67011097d43aad19efd2b53457e140 *ChangeLog
-90caf391c9f7fcf2f32aa0038f095634 *DESCRIPTION
+2009cbfd379ee680066256f9b1198a38 *ChangeLog
+ed80e0f129165ff97972a30c9ac03acc *DESCRIPTION
 d0b8b9acaf52198f63ac7dce7c8e1da3 *NAMESPACE
 2a04e012b4647f4b8de8b8901c57ef4f *R/alphavantage.R
 c675fbd7b8ba818ddb55e499115322ea *R/checkCRANStatus.R
@@ -23,7 +23,7 @@ add71072793a1417936dcd03a3c39c73 *R/print.R
 590b841511d4bdc916e3fe11821c0b1f *R/wday.R
 a38967908555aaa691a309522aa67605 *README.md
 2492716f1bcca4a7950e09b6e9236419 *cleanup
-568623c3fbe2fc6ff1fb30292cc8cba2 *inst/NEWS.Rd
+ae02d0b4be5107cb9c6240e77fa4f990 *inst/NEWS.Rd
 b3c14108c66b745c6968fd1f2722a358 *man/alphavantage.Rd
 3d800e6cbd43d09c1a51ea839cffba80 *man/as.data.table.xts.Rd
 2c53ab31d1b9419f61d1373623cfb110 *man/assignFormals.Rd
@@ -47,4 +47,4 @@ c945ab5333020da7a4daddb3fe8791c2 *man/wday.Rd
 6c2869a6ce74f8afaa12b944883527bf *src/checkNonAscii.cpp
 a35a368a58d276b3d5dce0bdd1dfede5 *src/init.c
 2de3777d09150ee970a37c7e398b6741 *src/readAndConvert.cpp
-1388a65843663d48f8b644924e195019 *src/rollMinMax.cpp
+71a353bbafa76cf88b940eeb1feaa9c7 *src/rollMinMax.cpp

@@ -1,8 +1,8 @@
 Package: dang
 Type: Package
 Title: 'Dang' Associated New Goodies
-Version: 0.0.14
-Date: 2021-10-17
+Version: 0.0.15
+Date: 2021-10-26
 Author: Dirk Eddelbuettel with contributions by Brodie Gaslam, Kevin Denny,
  Kabira Namit, Colin Gillespie, R Core, Josh Ulrich, Jordan Mark Barbone,
  and others.
@@ -16,6 +16,6 @@ LinkingTo: tidyCpp
 License: GPL (>= 2)
 RoxygenNote: 6.0.1
 NeedsCompilation: yes
-Packaged: 2021-10-17 13:17:53 UTC; edd
+Packaged: 2021-10-26 13:02:17 UTC; edd
 Repository: CRAN
-Date/Publication: 2021-10-17 13:30:02 UTC
+Date/Publication: 2021-10-29 23:10:02 UTC

@@ -3,6 +3,13 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/dang/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/dang/issues/#1}{##1}}
 
+\section{Changes in version 0.0.15 (2021-10-26)}{
+  \itemize{
+    \item Corrected scope of 'extern "C"' declaration to the actually C-callable
+    function (noticed by \code{clang++}, change requested by CRAN)
+  }
+}
+
 \section{Changes in version 0.0.14 (2021-10-17)}{
   \itemize{
     \item Updated continuous integration to run on Linux only.
@@ -14,7 +21,7 @@
     \code{integer}.
     \item The signature to \code{as.data.table} was standardized.
     \item A new function \code{rollMinMax} was added illustrating use of
-    the \code{NumVec} class from \pkg{tinyCpp}.
+    the \code{NumVec} class from \pkg{tidyCpp}.
     \item The \code{configure} script can record the last commit date and
     sha1 to automate timestamping builds, but not activated in this release.
     \item \code{checkCRANStatus()} now works correctly for single-package
