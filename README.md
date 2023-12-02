@@ -1,6 +1,5 @@
 ## dang: Dang Assorted New Goodies
 
-[![Build Status](https://travis-ci.org/eddelbuettel/dang.svg)](https://travis-ci.org/eddelbuettel/dang)
 [![CI](https://github.com/eddelbuettel/dang/workflows/ci/badge.svg)](https://github.com/eddelbuettel/dang/actions?query=workflow%3Aci)
 [![Build Status](https://dev.azure.com/eddelbuettel/dang/_apis/build/status/dang)](https://dev.azure.com/eddelbuettel/dang/_build)
 [![Package-License](https://eddelbuettel.github.io/badges/GPL2+.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
@@ -30,8 +29,8 @@ Dirk Eddelbuettel, plus contributions from others as noted in the respective fil
 
 Thanks to Josh Ulrich for discussions about `plot.xts`, Brodie Gaslam for discussions about his CRAN
 status checker (and Jordan Mark Barbone for a PR with fix to a corner case in it), Kevin Denny and
-Kabira Namit for Stata commands demotivate and motivate, and possibly others I am omitting -- if
-your name belongs here email me!
+Kabira Namit for Stata commands demotivate and motivate, Bill Dunlap for `str.language`, and
+possibly others I am omitting -- if your name belongs here email me!
 
 ### License
 

@@ -1,3 +1,80 @@
+2023-12-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.16
+
+	* .github/workflows/ci.yaml (jobs): Update to actions/checkout@v4
+
+	* R/datatable.R (as.data.table.xts): Switch to inherits()
+	* R/plotOBOS.R (plotOBOS): Switch to is.character()
+
+	* R/googleFinanceData.R: Update URL
+	* R/readAndConvert.R: Idem
+	* man/googleFinanceData.Rd: Regenerated
+	* man/readAndConvert.Rd: Idem
+
+2023-11-30  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/readAndConvert.cpp (_readAndConvert): Adjust two error() calls
+	to new tidyCpp signature to not trigger -Wformat warnings
+
+2023-08-21  Dirk Eddelbuettel  <edd@debian.org>
+
+ 	* DESCRIPTION (Version, Date): Roll minor version
+
+	* R/datatable.R (limitDataTableCores): New function
+	* man/limitDataTableCores.Rd: Documentation
+
+	* NAMESPACE: Add additional imports for shadowedPackages()
+	* R/shadowedPackages.R (shadowedPackages): Add a globalVariables()
+
+2023-02-15  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/shadowedPackages.R (shadowedPackages): Format package_version
+
+2023-02-14  Dirk Eddelbuettel  <edd@debian.org>
+
+ 	* DESCRIPTION (Version, Date): Roll minor version
+
+	* R/shadowedPackages.R: Revert back to initial data.table approach
+
+2023-02-12  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/shadowedPackages.R (shadowedPackages): New function to find
+	packages from more than .libPaths() directory
+	* man/shadowedPackages.Rd: New documentation
+
+2022-11-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .github/workflows/ci.yaml (jobs): Update to actions/checkout@v3
+
+2022-04-19  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/intradayMarketMonitor.R (intradayMarketMonitor): Support new
+	argument 'sleep', create default data file directory recursively
+	* man/intradayMarketMonitor.Rd: Idem
+
+2022-04-18  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/intradayMarketMonitor.R (.show_plot): Use dev.hold() and
+	dev.flush() for much smoother updates with thanks to Paul Murrell
+
+2022-02-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/str.language.R: New helper function based on post by Bill Dunlap
+	to r-devel
+	* man/str.language.Rd: Documentation
+	* README.md: Also thank Bill
+	* DESCRIPTION: Idem
+
+2021-11-05  Dirk Eddelbuettel  <edd@debian.org>
+
+ 	* README.md: Remove Travis badge
+	* .travis.yml: Remove Travis YAML config
+
+2021-10-26  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.15
+
 2021-10-19  Dirk Eddelbuettel  <edd@debian.org>
 
  	* DESCRIPTION (Version, Date): Roll minor version
