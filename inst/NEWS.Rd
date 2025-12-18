@@ -3,6 +3,23 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/dang/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/dang/issues/#1}{##1}}
 
+\section{Changes in version 0.0.17 (2025-12-18)}{
+  \itemize{
+    \item Added new funtion \code{reorderMicrobenchmarkResults} with alias
+    \code{rmr}
+    \item Use \code{tolower} on email argument to \code{checkCRANStatus}
+    \item Added new function \code{cranORCIDs} bootstrapped from two emails
+    by Kurt Hornik
+    \item Switched to using Authors@R in DESCRIPTION and added ORCIDs where
+    available
+    \item Switched to \code{r-ci} action with included bootstrap step; updated
+    updated the checkout action (twice); added (commented-out) log accessor
+    \item Removed \code{googleFinanceData} as the (unofficial) API access
+    point no longer works
+    \item Removed \code{muteTweeters} because the API was turned off
+  }
+}
+
 \section{Changes in version 0.0.16 (2023-12-02)}{
   \itemize{
     \item Added new function \code{str.language()} based on post by Bill Dunlap
